@@ -11,24 +11,25 @@ export default function Header() {
     <Container>
         <Wrapper>
             <Logowrapper>
-                <BiMenu/>
-                <BsYoutube/>
+                <BiMenu size={'38px'}/>
+                <BsYoutube size={'38px'} color={'#FF0000'}/>
+                <h2>YouTube</h2>
             </Logowrapper>
             <Middlebar>
                 <Inner>
                     <input type="Search" />
                     <Search>
-                        <BiSearchAlt/>
+                        <BiSearchAlt size={'35px'}/>
                     </Search>
                 </Inner>
                 <Mic>
-                    <FaMicrophoneAlt/>
+                    <FaMicrophoneAlt size={'35px'}/>
                 </Mic>
             </Middlebar>
             <Usericons>
-                <BiVideoPlus/>
-                <CgMenuGridO/>
-                <IoIosNotificationsOutline/>
+                <BiVideoPlus size={'35px'}/>
+                <CgMenuGridO size={'35px'}/>
+                <IoIosNotificationsOutline size={'35px'}/>
                 <img src="/img/ava.jpg" alt="" />
             </Usericons>
         </Wrapper>
@@ -50,6 +51,8 @@ const Wrapper = styled.div`
     width: 100%;
 `;
 const Usericons = styled.div`
+    margin-right: 40px;
+
     img{
         width: 60px;
         height: 60px;
@@ -57,10 +60,23 @@ const Usericons = styled.div`
     }
 `;
 const Middlebar = styled.div`
-
+    display: flex;
+    background-color: black;
+    width: 700px;
+    justify-content: space-between;
+    align-items: center;
 `;
 const Logowrapper = styled.div`
-
+    margin-left: 40px;
+    background-color: greenyellow;
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    h2{
+        margin-left: -20px;
+    }
 `;
 const Inner = styled.div`
 
