@@ -1,11 +1,11 @@
 import React from 'react'
 import styled from 'styled-components'
 
-export default function Topper() {
+export default function Topper({top}) {
   return (
     <Container>
         <Wrapper>
-            <span>All</span>
+            <span>{top}</span>
         </Wrapper>
     </Container>
   )

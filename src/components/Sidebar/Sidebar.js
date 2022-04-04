@@ -1,17 +1,13 @@
 import React from 'react'
 import styled from 'styled-components'
-// import {IoLibraryOutline} from 'react-icons/io'
-// import {MdSubscriptions} from 'react-icons/md'
-// import {CgShortcut} from 'react-icons/cg'
-// import {MdExplore} from 'react-icons/md'
-import {AiFillHome} from 'react-icons/ai'
 
-export default function Sidebar() {
+
+export default function Sidebar({icon, title}) {
   return (
     <Container>
         <Wrapper>
-            <AiFillHome size={'25px'}/>
-            <span>Home</span>
+            {icon}
+            <span>{title}</span>
         </Wrapper>
     </Container>
   )

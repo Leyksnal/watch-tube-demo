@@ -38,7 +38,6 @@ export default function Header() {
 }
 
 const Container = styled.div`
-    background-color: green;
     display: flex;
     justify-content: center;
     align-items: center;

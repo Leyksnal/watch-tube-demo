@@ -4,11 +4,12 @@ import {HiColorSwatch} from 'react-icons/hi'
 import {CgPlayListCheck} from 'react-icons/cg'
 
 
-export default function Views() {
+
+export default function Views({img, title, name, views}) {
   return (
     <Container>
         <Thumnail>
-            <img src="/img/tube.jpg" alt="" />
+            <img src={img} alt=''/>
             <video loop={true} playsInline={true} autoPlay={true} muted>
                 <source src="/Assets/videos/marvel.mp4" />
             </video>
@@ -20,9 +21,9 @@ export default function Views() {
         <Content>
             <img src="/img/ava.jpg" alt="" />
             <Inner>
-                <Title>Mr Stella came to Blackmail the judges</Title>
-                <Name>Maimi Escort</Name>
-                <View>12k views </View>
+                <Title>{title}</Title>
+                <Name>{name}</Name>
+                <View>{views}</View>
             </Inner>
         </Content>
     </Container>
@@ -111,7 +112,7 @@ const Thumnail = styled.div`
 
 
 const Inner = styled.div`
-
+    width: 80%;
 `;
 
 
