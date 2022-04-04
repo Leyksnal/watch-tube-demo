@@ -42,7 +42,7 @@ const Container = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 70px;
+    height: 60px;
 `;
 const Wrapper = styled.div`
     display: flex;
@@ -68,7 +68,6 @@ const Middlebar = styled.div`
 `;
 const Logowrapper = styled.div`
     margin-left: 40px;
-    background-color: greenyellow;
     width: 200px;
     display: flex;
     justify-content: space-between;
